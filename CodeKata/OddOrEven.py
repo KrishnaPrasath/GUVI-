@@ -1,8 +1,10 @@
 def oddOrEven(num):
-    if num%2==0:
-        print("Even")
+    if(num>0):
+        if num%2==0:
+            print("Even")
+        else:
+            print("Odd")       
     else:
-         print("Odd")
-
-num = 10
+        print("Invalid")
+num = int(input())
 oddOrEven(num)
