@@ -7,6 +7,6 @@ if(re.match(pattern,char)):
     if(char in vowels):
         print("Vowels")
     else:
-        print("Consonants")
+        print("Consonant")
 else:
     print("Invalid")
