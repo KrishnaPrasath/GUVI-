@@ -1,5 +1,5 @@
 import calendar
-year = 2020
+year = int(input())
 if(calendar.isleap(year)):
     print("yes")
 else:
