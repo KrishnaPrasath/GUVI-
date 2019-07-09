@@ -5,7 +5,7 @@ pattern = "[A-Za-z]"
 vowels =list("aeiou")
 if(re.match(pattern,char)):
     if(char in vowels):
-        print("Vowels")
+        print("Vowel")
     else:
         print("Consonant")
 else:
