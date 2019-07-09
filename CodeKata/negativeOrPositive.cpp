@@ -8,7 +8,7 @@ check(num);
 }
 void check(int num){
   if (num > 0){
-    cout<"Positive";
+    cout<<"Positive";
   } else if (num < 0){
         cout<<"Negative";
   } else if (num==0){
