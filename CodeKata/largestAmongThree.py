@@ -1,11 +1,12 @@
-num =[]
-for i in range(0,3):
-    num.append(int(input()))
-if(num[0]>num[1] and num[0]>num[2]):
-    print(num[0])
-elif(num[1]>num[0] and num[1]>num[2]):
-    print(num[1])
+a=int(input())
+b=int(input())
+c=int(input())
+
+if(a>b and a>c):
+    print(a)
+elif(b>a and b>c):
+    print(b)
 else:
-    print(num[2])
+    print(c)
 
 
