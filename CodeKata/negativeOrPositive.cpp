@@ -11,6 +11,9 @@ void check(int num){
     cout<"Positive";
   } else if (num < 0){
         cout<<"Negative";
-  } else cout<<"Zero";
+  } else if (num==0){
+    cout<<"Zero";
+  }
+  else cout<<"Invalid";
   
 }
