@@ -1,4 +1,7 @@
+/*
 
+
+*/
 var expected = {foo: "krish", bar: 6};
 var actual = {foo: "Krish", bar: 6}
 
