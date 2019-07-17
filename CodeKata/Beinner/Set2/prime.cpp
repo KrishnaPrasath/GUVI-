@@ -1,28 +1,30 @@
 #include <iostream>
 using namespace std;
 
-void prime(int n);
+bool prime(int n);
 
 int main(){
     int N;
     cin>>N;
-    prime(N);
+    bool result=prime(N);
+    if(result){
+        cout<<"yes";
+    }else{
+        cout<<"no";
+    } 
 }
 
-void prime(int n){
+bool prime(int n){
+    bool flag=true;
     if(n<0){
         cout<<"no";
+        flag=false;
     }else{
-        if(n==2||n==3){
-        cout<<"yes";
-        }
-        else{        
-            if(n%2==0||n%3==0){
-                cout<<"no";
-            }else{
-                cout<<"yes";
+        for(int i=2;i<n/2;i++){
+            if(n%i==0){
+                flag=false;
             }
-    }
+        }
+    }return flag;
     }
     
-}
