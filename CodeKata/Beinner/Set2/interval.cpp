@@ -2,15 +2,20 @@
 using namespace std;
 void interval(int a , int b);
 int main(){
-    int a,b;
-    cin>>a>>b;
-    interval(a,b);
+    int N,Q;
+    cin>>N>>Q;
+    interval(N,Q);
 }
 
 void interval(int a , int b){
-    for(int i=a;i<b;i++){
+    if(a<0||b<=0){
+        cout<<"invalid i/p";       
+    }else{
+        
+    for(int i=a+1;i<b;i++){
         if(i%2!=0){
             cout<<i<<" ";
         }
+    }
     }
 }
