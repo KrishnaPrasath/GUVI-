@@ -9,9 +9,9 @@ int main() {
     int N,E;
     cin>>N>>E;
     while(N<E){
-        int ans=checkArmStrong(N+1);
-    if(ans==N+1){
-        cout<<ans;
+        int ans=checkArmStrong(N);
+    if(ans==N){
+        cout<<ans<<" ";
     }
     N++;
     }
