@@ -3,7 +3,9 @@ using namespace std;
 void multiples(int N);
 int main()
 {
-    multiples(5);
+    int N;
+    cin >> N;
+    multiples(N);
 }
 
 void multiples(int N)
