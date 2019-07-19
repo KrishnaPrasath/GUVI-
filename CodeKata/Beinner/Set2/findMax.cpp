@@ -5,9 +5,15 @@ int findMax(int numbers[], int arrLen);
 
 int main()
 {
-    int numbers[] = {1, 2, 8, 4, 5};
-    int N = 5;
-    cout << findMax(numbers, N);
+    int N;
+    cin >> N;
+    int numbers[N];
+    for (int i = 0; i < N; i++)
+    {
+        cin >> numbers[i];
+    }
+
+    std::cout << findMax(numbers, N);
 }
 
 int findMax(int numbers[], int arrLen)
@@ -22,3 +28,4 @@ int findMax(int numbers[], int arrLen)
     }
     return temp;
 }
+
