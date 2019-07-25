@@ -1,7 +1,7 @@
 function removeProperty(obj, key) {
   // your code here
   delete obj[key];
-  console.log(obj);
+  console.log(obj[key]);
 }
 var obj = {
   name: "krish"
