@@ -28,6 +28,6 @@ void sortAndPrint(int n, int nArr[])
     }
     for (int k = 0; k < n; k++)
     {
-        cout << nArr[k];
+        cout << nArr[k]<<" ";
     }
 }
