@@ -6,8 +6,15 @@ void sortAndPrint(int n, int nArr[]);
 
 int main()
 {
-    int sum[4] = {5, 8, 6, 4};
-    sortAndPrint(4, sum);
+    int N;
+    int nArr[N];
+    cin >> N;
+    for (int i = 0; i < N + 1; i++)
+    {
+        cin >> nArr[i];
+    }
+
+    sortAndPrint(N, nArr);
 }
 //[ 7 5 2 9]
 void sortAndPrint(int n, int nArr[])
@@ -28,6 +35,6 @@ void sortAndPrint(int n, int nArr[])
     }
     for (int k = 0; k < n; k++)
     {
-        cout << nArr[k]<<" ";
+        cout << nArr[k] << " ";
     }
 }
