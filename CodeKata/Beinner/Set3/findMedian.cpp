@@ -8,11 +8,13 @@ int main()
     int N;
 
     cin >> N;
+
     int ip[N];
     for (int i = 0; i < N; i++)
     {
-        cin >> ip[N];
+        cin >> ip[i];
     }
+
     findMedian(ip, N);
 }
 
