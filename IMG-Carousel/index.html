@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="../JSLib/jcarousel-0.3.9/dist/jquery.jcarousel.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <style>
+      .jcarousel-wrapper {
+        margin: 20px auto;
+        position: relative;
+        border: 10px solid #fff;
+        width: 600px;
+        height: 400px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 0 2px #999;
+        -moz-box-shadow: 0 0 2px #999;
+        box-shadow: 0 0 2px #999;
+      }
+
+      .jcarousel-wrapper .photo-credits {
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+        font-size: 13px;
+        color: #fff;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+        opacity: 0.66;
+      }
+
+      .jcarousel-wrapper .photo-credits a {
+        color: #fff;
+      }
+
+      /** Carousel **/
+
+      .jcarousel {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .jcarousel ul {
+        width: 10000em;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .jcarousel li {
+        float: left;
+      }
+
+      /** Carousel Controls **/
+
+      .jcarousel-control-prev,
+      .jcarousel-control-next {
+        position: absolute;
+        top: 200px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        background: #4e443c;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 0 0 1px #000;
+        font: 24px/27px Arial, sans-serif;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        -webkit-box-shadow: 0 0 2px #999;
+        -moz-box-shadow: 0 0 2px #999;
+        box-shadow: 0 0 2px #999;
+      }
+
+      .jcarousel-control-prev {
+        left: -50px;
+      }
+
+      .jcarousel-control-next {
+        right: -50px;
+      }
+
+      .jcarousel-control-prev:hover span,
+      .jcarousel-control-next:hover span {
+        display: block;
+      }
+
+      .jcarousel-control-prev.inactive,
+      .jcarousel-control-next.inactive {
+        opacity: 0.5;
+        cursor: default;
+      }
+
+      /** Carousel Pagination **/
+
+      .jcarousel-pagination {
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+      }
+
+      .jcarousel-pagination a {
+        text-decoration: none;
+        display: inline-block;
+
+        font-size: 11px;
+        line-height: 14px;
+        min-width: 14px;
+
+        background: #fff;
+        color: #4e443c;
+        border-radius: 14px;
+        padding: 3px;
+        text-align: center;
+
+        margin-right: 2px;
+
+        opacity: 0.75;
+      }
+
+      .jcarousel-pagination a.active {
+        background: #4e443c;
+        color: #fff;
+        opacity: 1;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>carousel</h1>
+
+      <div class="jcarousel-wrapper">
+        <div class="jcarousel">
+          <ul>
+            <li>
+              <img
+                src="../IMG/design-detail-geometric-691710.jpg"
+                width="600"
+                height="400"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="../IMG/bird-s-eye-view-cliffs-daylight-2402955.jpg"
+                width="600"
+                height="400"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="../IMG/art-colorful-colourful-942317.jpg"
+                width="600"
+                height="400"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="../IMG/art-artistic-background-247676.jpg"
+                width="600"
+                height="400"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="../IMG/adventure-black-and-white-boat-910213.jpg"
+                width="600"
+                height="400"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="../IMG/abstract-painting-art-artistic-1149019.jpg"
+                width="600"
+                height="400"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+        <p class="jcarousel-pagination"></p>
+      </div>
+    </div>
+  </body>
+</html>
