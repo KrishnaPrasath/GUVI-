@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        width: 0px;
+        height: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="main" width="500px" height="500px"></canvas>
+    <button id="tri">Draw Triangle</button>
+    <button id="tra">Rotate the Triangle</button>
+    <button id="clr">Clear Canvas</button>
+    <script>
+      //to draw a line
+      //   context.beginPath();
+      //   context.moveTo(100, 50);
+      //   context.lineTo(100, 150);
+      //   context.lineWidth = 10;
+      //   context.lineCap = "square";
+      //   context.stroke();
+
+      //to draw a rectangle
+      //   context.beginPath();
+      //   context.rect(188, 50, 200, 100);
+      //   context.fillStyle = "yellow";
+      //   context.fill();
+      //   context.lineWidth = 7;
+      //   context.strokeStyle = "black";
+      //   context.stroke();
+
+      //to draw a rei
+      $(document).ready(function() {
+        let cv = document.getElementById("main");
+        let context = cv.getContext("2d");
+        console.log("context");
+        $("#tri").on("click", function() {
+          console.log("context");
+          context.clearRect(0, 0, cv.width, cv.height);
+          context.beginPath();
+          context.moveTo(60, 240);
+          context.lineTo(240, 240);
+          context.lineTo(150, 60);
+          context.fillStyle = "red";
+          context.fill();
+          context.stroke();
+        });
+        $("#tra").on("click", function() {
+          context.clearRect(0, 0, cv.width, cv.height);
+          context.translate(cv.width / 2, cv.height / 2);
+          context.rotate(Math.PI / 4);
+          context.beginPath();
+          context.moveTo(-90, 90);
+          context.lineTo(90, 90);
+          context.lineTo(0, -90);
+          //   context.moveTo(60, 240);
+          //   context.lineTo(240, 240);
+          //   context.lineTo(150, 60);
+          context.closePath();
+          context.fill();
+          context.stroke();
+          //   context.save();
+          //   context.restore();
+        });
+        $("#clr").on("click", function() {
+          context.clearRect(0, 0, cv.width, cv.height);
+        });
+      });
+    </script>
+  </body>
+</html>
